@@ -7,7 +7,7 @@ import TodoMobile from "../../assets/Projects_images/todoMobile.png"
 import Eventora from "../../assets/Projects_images/eventora.png";
 import EventoraMobile from "../../assets/Projects_images/eventoraMobile.png"
 import MyPortfolio from "../../assets/Projects_images/MyPortfolio.png";
-import MyPortfolioMobile from "../../assets/Projects_images/MyPortfolioMobile.png"
+import MyPortfolioMobile from "../../assets/Projects_images/MyportfolioMobile.png"
 import { FaArrowRight } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaChevronLeft, FaChevronRight} from "react-icons/fa6";
