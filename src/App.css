@@ -1,0 +1,17 @@
+html{
+    scroll-behavior: smooth;
+}
+.scroll-to-top{
+    animation:myAnimation 2s infinite linear ;
+}
+@keyframes myAnimation {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
