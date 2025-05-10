@@ -25,13 +25,13 @@ function Footer() {
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/share/14xgdvYSKaH/"
                 className="text-gray-400 hover:text-white transition-colors cursor-pointer"
               >
                 <FaFacebook size={20} />
               </a>
               <a
-                href="#"
+                href="https://github.com/Chandan5689/"
                 className="text-gray-400 hover:text-white transition-colors cursor-pointer"
               >
                 <FaGithub size={20} />
