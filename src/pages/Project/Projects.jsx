@@ -8,6 +8,8 @@ import Eventora from "../../assets/Projects_images/eventora.png";
 import EventoraMobile from "../../assets/Projects_images/eventoraMobile.png"
 import MyPortfolio from "../../assets/Projects_images/MyPortfolio.png";
 import MyPortfolioMobile from "../../assets/Projects_images/MyportfolioMobile.png"
+import Recipe from "../../assets/Projects_images/Recipe.png"
+import RecipeMobile from "../../assets/Projects_images/RecipeMobile.png"
 import { FaArrowRight } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaChevronLeft, FaChevronRight} from "react-icons/fa6";
@@ -40,12 +42,13 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Simple Menu page with filter system",
-      imageDeskTop: MenuJs,
-      imageMobile:MenuJsMobile,
+      title: "A Simple Recipe Web design",
+      imageDeskTop:Recipe,
+      imageMobile:RecipeMobile,
       description:
-        "A simple Menu page that has filtering system for different items which is responsive and smooth",
-      technologiesUsed: ["HTML", "CSS","Tailwind CSS", "JS"],
+        "A simple, elegant and interactive recipe website of different dishes with differnt categories using latest technologies which has smooth and responsive effect",
+        technologiesUsed: ["React", "Tailwind CSS",],
+      link:'https://recipe-olive-xi.vercel.app/'
     },
     {
       id: 2,
@@ -55,6 +58,7 @@ function Projects() {
       description:
         "A simple todo list where we can add tasks and delete them when completed",
         technologiesUsed: ["React", "Tailwind CSS",],
+      link:'https://to-do-beta-dun.vercel.app/'
     },
     {
       id: 3,
@@ -64,6 +68,7 @@ function Projects() {
       description:
         "A simple and elegant event viewing website that is occuring near your area",
         technologiesUsed: ["React", "CSS", "Tailwind CSS", ],
+      link:'#'
     },
     {
       id: 4,
@@ -73,7 +78,20 @@ function Projects() {
       description:
         "A simple, elegant and interactive portfolio website of myself using latest technologies which has smooth and responsive effect",
         technologiesUsed: ["React", "Tailwind CSS",],
+      link:'https://portfolio-nine-tan-74.vercel.app/',
     },
+    
+    {
+      id: 5,
+      title: "Simple Menu page with filter system",
+      imageDeskTop: MenuJs,
+      imageMobile:MenuJsMobile,
+      description:
+        "A simple Menu page that has filtering system for different items which is responsive and smooth",
+      technologiesUsed: ["HTML", "CSS","Tailwind CSS", "JS"],
+      link:'#'
+    },
+
   ];
   return (
     <>
@@ -211,13 +229,16 @@ function Projects() {
                           ))}
                       </div>
                     </div>
-                    {/* <div className="mt-2 cursor-pointer relative z-999 flex justify-end w-full">
-                    <a href="#" className="">
+                    <div className="mt-2 cursor-pointer relative z-999 flex justify-end w-full">
+                    <a href={
+                          projects.find((p) => p.id === selectedProject)
+                            ?.link
+                        }>
                       <button className="text-indigo-800 font-medium hover:text-indigo-600 transition-colors flex items-center cursor-pointer whitespace-nowrap !rounded-button">
                       View project
                       <FaArrowRight className="ml-1 mt-1" />
                     </button></a>
-                    </div> */}
+                    </div>
                     
                   </div>
                 )}
