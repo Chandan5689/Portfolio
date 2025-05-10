@@ -38,13 +38,13 @@ function About() {
                   <FaLinkedin size={24}/>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/14xgdvYSKaH/"
                   className="text-gray-600 hover:text-indigo-600 transition-colors cursor-pointer"
                 >
                   <FaFacebook size={24}/>
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/Chandan5689/"
                   className="text-gray-600 hover:text-indigo-600 transition-colors cursor-pointer"
                 >
                   <FaGithub size={24}/>
